@@ -15,14 +15,20 @@ body {
     align-items: center;
     margin: 0 auto;
     border: 2px solid;
-    overflow: scroll;
+
 
 }
+
+.container__h1 {
+    color: white;
+}
+
 
 .container__p {
     margin-top: 0;
     padding: 1rem;
     text-align: center;
+    color: white;
 }
 
 .container__bill-label {
