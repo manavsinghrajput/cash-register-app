@@ -61,13 +61,12 @@ body {
 }
 
 #btn-calculate {
-    height: 40px;
-    width: 120px;
     font: inherit;
     color: #10357F;
     border: 1px solid #0B265B;
     border-radius: 2em;
     cursor: pointer;
+    padding: 1em;
 }
 
 #btn-calculate:hover {
