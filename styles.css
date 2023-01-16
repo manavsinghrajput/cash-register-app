@@ -3,19 +3,19 @@
 body {
     margin: 0;
     font-family: 'Major Mono Display', monospace;
+    background: linear-gradient(#103783, #9bafd9);
 }
 
 .container {
     height: 100vh;
-    max-width: 90%;
+    max-width: 750px;
     display: flex;
     flex-direction: column;
     /* justify-content: space-between; */
     align-items: center;
     margin: 0 auto;
-    border: 1px solid;
+    border: 2px solid;
     overflow: scroll;
-    background: linear-gradient(#103783, #9bafd9);
 
 }
 
@@ -76,19 +76,20 @@ body {
     border-collapse: collapse;
     margin: 1rem;
     background: #E1E7F4;
+    box-sizing: content-box;
+}
+
+caption {
+    padding: 1rem;
+    text-align: left;
+    font-weight: bold;
 }
 
 th,
 td {
-    padding: 7px;
+    padding: .2rem;
     /* width: 80px; -- find out more about this */
     border: 1px solid #0B265B;
     text-align: center;
     /* letter-spacing: 1px; */
-}
-
-caption {
-    padding: 1rem 2rem;
-    text-align: left;
-    font-weight: bold;
 }
