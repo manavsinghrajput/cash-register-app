@@ -7,9 +7,10 @@ const returnedDenomination = document.querySelectorAll(".returned");
 const currency = [2000, 500, 100, 20, 10, 5, 1];
 
 btnCalculate.addEventListener("click", function calculateReturnCash() {
-    if (billAmount.value >= 0) {
-        if (cashReceived.value >= billAmount.value) {
-            var returnAmount = cashReceived.value - billAmount.value;
+    displayError.style.display = "none";
+    if (billAmount.valueAsNumber >= 0) {
+        if (cashReceived.valueAsNumber >= billAmount.valueAsNumber) {
+            var returnAmount = cashReceived.valueAsNumber - billAmount.valueAsNumber;
             for (let i = 0; i < currency.length; i++) {
                 const returnDenomination = Math.trunc(returnAmount / currency[i])
                 returnAmount %= currency[i];
@@ -26,5 +27,6 @@ btnCalculate.addEventListener("click", function calculateReturnCash() {
 })
 
 function errorMessage(message) {
+    displayError.style.display = "block";
     displayError.innerText = message;
 }
